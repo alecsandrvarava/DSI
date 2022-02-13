@@ -30,11 +30,6 @@ dataProduct.map(function (element) {
 	</div>`)
 })
 
-// 1. Дропдауны для одного элемента
-// 2. Сделать для 2-3 элементов
-// 3. Создать бургер и скрыть в него все меню
-// 4. Реализовать поиск на страницы - фиктивный
-
 const landing = {
 	dom: {
 		menu: {
@@ -202,7 +197,6 @@ const loadMenu = function () {
 	})
 
 	const itemsMenu = document.querySelectorAll('.arrow')
-
 	itemsMenu.forEach(function (elem) {
 		elem.onclick = function () {
 			if (this.nextElementSibling.classList.contains('heightMenu')) {
@@ -254,7 +248,6 @@ if (screen.width < 991) {
 }
 
 const menuBurger = document.querySelector('.menu__burger')
-
 menuBurger.onclick = function () {
 	if (landing.dom.menu.lisp.classList.contains('hidden')) {
 		landing.dom.menu.lisp.classList.remove('hidden')
@@ -271,9 +264,11 @@ menuBurger.onclick = function () {
 			this.classList.remove('animation')
 		}, 200)
 	}
-
 }
 
-
+let date = new Date()
+console.log(date.getFullYear())
+const footerDatе = document.getElementById('footerDatе')
+footerDatе.innerHTML = date.getFullYear()
 
 
