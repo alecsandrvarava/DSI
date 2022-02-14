@@ -306,6 +306,10 @@ body {
 	}
 	.top__items {
 		flex-direction: column;
+		margin: 0;
+	}
+	.top__item {
+		padding: 0;
 	}
 	.top__item h1 {
 		text-align: center;
@@ -446,6 +450,12 @@ body {
 	}
 	.item__text {
 		font-size: 16px;
+	}
+	.items-product {
+		margin: 0;
+	}
+	.product-item {
+		padding: 0;
 	}
 }
 @media (max-width: 768px) {
