@@ -311,9 +311,13 @@ body {
 	}
 	.top__item h1 {
 		text-align: center;
+		font-size: 38px;
 	}
 	.top__item p {
 		margin-bottom: 25px;
+	}
+	.top__item:first-child p {
+		text-align: center;
 	}
 	.top__item .button-product {
 		justify-content: center;
@@ -457,16 +461,17 @@ body {
 	}
 }
 @media (max-width: 768px) {
+	.section-product {
+		margin-bottom: 0;
+	}
 	.items-product {
 		flex-direction: column;
-		margin: 0;
 	}
-	.product-item {
-		padding: 0px 15px;
-	}
+
 	.item {
 		margin-bottom: 50px;
 		align-items: center;
+		padding: 5px 0;
 	}
 	.item__text {
 		margin-top: 20px;
